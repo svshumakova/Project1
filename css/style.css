@@ -1,0 +1,342 @@
+﻿
+
+#intro {
+    position: relative;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    height: 50px;
+}
+
+#brands {
+}
+
+#content {
+    background-color: #f9f9f9;
+    position: relative;
+    text-align: center;
+}
+
+#content-first{
+    background-color: #363636;
+    position: relative;
+    text-align: center;
+}
+
+#footer{
+    background-color: #31bfef;
+    color: #fff;
+    font-size: 16px;
+}
+
+.base-img {
+    width: 100%;
+    display: block;
+    filter: alpha(Opacity=75); /* Полупрозрачность для IE */
+    opacity: 0.75; /* Полупрозрачность для других браузеров */
+}
+
+.intro-container {
+    color: #fff;
+    font-size: 14px;
+}
+
+#header .right-area {
+    float: right;
+    max-width: 55%;
+    text-align: right;
+}
+
+#header .left-area {
+    float: left;
+    max-width: 40%;
+}
+
+#intro .text-area {
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 0 15px 10px;
+    height: calc(100% - 50px);
+    overflow: hidden;
+}
+
+#intro .text-area::before {
+    display: inline-block;
+    content: "";
+    margin: 0 0 0 -5px;
+    width: 1px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#intro .text-area-inner {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.icon-size {
+    font-size: 14px;
+}
+
+.header-button {
+    background: none;
+    border: 1px, solid, #31bfef;
+    width: 105px;
+    color: #fff;
+}
+
+.intro-button {
+    width: 80px;
+    margin: 0 10px;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.phone-number {
+}
+
+.brand-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+    .brand-link:hover,
+    .brand-link:focus {
+        text-decoration: none;
+        color: #fff;
+    }
+
+#header .header-button {
+    display: none;
+}
+
+.intro-text {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.intro-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+
+.brands {
+    padding: 0;
+}
+
+
+.brands-img {
+    max-width: 100%;
+}
+
+.allbrand-picture {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    width: calc(50% - 20px);
+}
+
+.allbrand-container {
+    text-align: center;
+    font-size: 0px;
+    line-height: 0px;
+}
+
+.content-container {
+    color: #363636;
+    padding: 15px;
+}
+
+.contet-title {
+    font-size: 24px;
+    margin: 22px 0;
+}
+
+.align-picture{
+    position: relative;
+    height: 80px;
+}
+
+.align-picture a img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;    
+    margin: auto;
+    height: 70px;
+}
+
+.content-text-size{
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.content-text {
+    font-size: 14px;
+    margin: 15px;
+}
+
+.salers-container-border {
+    border: 1px solid #31bfef; 
+    margin-bottom: 15px; 
+}
+
+.buyers-container-border {
+    border: 1px solid #42d685;
+}
+
+.salers-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    text-align: center;
+}
+
+.sellers {
+    color: #31bfef;
+    margin: 22px 0;
+}
+
+.buyers {
+    color: #42d685;    
+    margin: 22px 0;
+}
+
+.content-info {
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+}
+
+
+.content-first-container{
+    color: #fff;
+    padding: 15px;
+}
+
+.circle-image{
+    height: 100px;
+}
+
+.content-second-container{
+    text-align: center; 
+    color: #363636;
+    padding: 15px;
+}
+
+.footer-container{
+    padding: 15px;
+}
+
+.footer-link,
+.footer-link:hover,
+.footer-link:focus{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+@media (min-width: 480px) {
+    .allbrand-picture {
+        width: calc(33% - 20px);
+    }
+
+    .conte-title {
+        font-size: 24px;
+    }
+
+    .content-text {
+        font-size: 18px;
+    }
+    .content-text-size br{
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) {
+    
+    #header {
+        font-size: 18px;
+    }
+
+    #header .header-button {
+        display: inline-block;
+    }
+
+    .intro-text {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .intro-title {
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    
+    .allbrand-picture {
+        width: calc(25% - 20px);
+    }
+
+    .conte-title {
+        font-size: 48px;
+    }
+
+    .content-text {
+        font-size: 24px;
+    }
+
+    .salers-container {
+        width: calc(50% - 100px);
+    }
+
+    .intro-button {
+        width: 230px;
+        margin: 30px;
+        height: 52px;
+        font-size: 24px;
+    }
+    .align-picture{
+        position: relative;
+        height: 160px;
+    }
+    .align-picture a img{
+        height: auto;
+    }
+
+    .content-text-size br{
+        display: inline-block;
+    }
+}
+
+@media (min-width: 992px) {
+    .allbrand-picture {
+        width: auto;
+        max-width: 100px;
+    }
+    .intro-text {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+}
