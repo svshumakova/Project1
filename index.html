@@ -1,40 +1,40 @@
 ﻿<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Site Title</title>
+    <title>LOGO</title>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
-    <link href="Bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div id="intro">
-        <img class="base-img" src="images/intro.jpg">
-        <div class="container intro-container">
+        <img class="intro-img" src="images/intro.jpg">
+        <div class="container header-container">
             <header id="header">
-                <div class="left-area"><a class="brand-link" href="#">Logo</a></div>
-
+                <a class="logo" href="#">Logo</a>
                 <div class="right-area">
-                    <span class="glyphicon glyphicon-earphone icon-size"> </span>
-                    <span class="phone-number">1 (888) 505-3149</span>
-
-                    <button type="button" class="btn btn-primary header-button">Sell</button>
-                    <button type="button" class="btn btn-success header-button">Buy</button>
+                    <span class="phone-number"><span class="glyphicon glyphicon-earphone"></span> 1 (888) 505-3149</span>
+                    <button type="button" class="btn btn-primary btn-stroke">Sell</button>
+                    <button type="button" class="btn btn-success btn-stroke">Buy</button>
                 </div>
             </header>
-            <div class="text-area">
-                <div class="text-area-inner">
-                    <p class="intro-title">New way to Sell/Buy Cars</p>
-                    <p class="intro-text">Seller gets more, Buyers pay LessSeller gets more, Buyers pay eller<br /> gets more, Buyers pay LessSeller gets </p>
-                    <button type="button" class="btn btn-primary btn-xs intro-button">Sell</button>
-                    <button type="button" class="btn btn-success btn-xs intro-button">Buy</button>
+            <div class="intro-text">
+                <div class="intro-text-inner">
+                    <span class="icon-video"><span class="inner">&nbsp;</span></span>
+                    <h1 class="lead">New way to Sell/Buy Cars</h1>
+                    <p>Seller gets more, Buyers pay LessSeller gets mor1e, Buyers pay eller<br /> gets more, Buyers pay LessSeller gets </p>
+                    <div class="btns-holder">
+                        <button type="button" class="btn btn-primary btn-lg">Sell</button>
+                        <button type="button" class="btn btn-success btn-lg">Buy</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="brands">
+    <!--<div id="brands">
         <div class="container allbrand-container">
 
             <div class="allbrand-picture"><a href="#"><img class="brands-img" src="images/usa_today.jpg"></a></div>
@@ -52,36 +52,46 @@
     <div id="content">
         <div class="container content-container">
             <div>
-                <h1 class="contet-title">Simple & Easy process</h1>
+                <h1>Simple & Easy process</h1>
                 <p class="content-text">Seller gets more, Buyers pay LessSeller gets more, Buyers pay eller gets more, Buyers pay LessSeller gets</p>
             </div>
-            <div class="salers-container salers-container-border">
+            <div >
                 <h2 class="sellers">Sellers</h2>
-                <div class="content-info">
-                    <div class="align-picture">
-                        <a href="#"><img src="images/tell.png"></a></div>
+                <div class="content-inline">
+                    <div class="content-info">
+                        <div class="align-picture">
+                            <a href="#"><img src="images/tell.png"></a>
+                        </div>
                         <h3><b>Tell us about your Car</b></h3>
                         <p class="content-text-size">Fill up this simple form<br /> and Schedule an inspection<br /> with us to get your car certified</p>
                     </div>
-                <div class="content-info">
-                    <div class="align-picture">
-                        <a href="#"><img src="images/time.png"></a></div>
-                        <h3><b>Time to Post!</b></h3>
-                        <p class="content-text-size">We will create post and<br /> adversite your car until<br /> we find the right buyer</p>
+                </div>
+                &lt;!&ndash;<div class="content-inline arrow"><img src="images/content-arrow-right.png"></div>&ndash;&gt;
+                    <div class="content-inline">
+                        <div class="content-info">
+                            <div class="align-picture">
+                                <a href="#"><img src="images/time.png"></a>
+                            </div>
+                            <h3><b>Time to Post!</b></h3>
+                            <p class="content-text-size">We will create post and<br /> adversite your car until<br /> we find the right buyer</p>
+                        </div>
                     </div>
-                <div class="content-info">
-                    <div class="align-picture">
-                        <a href="#"><img src="images/say.png"></a>
-                    </div>
-                        <h3><b>Say Bye-Bye</b></h3>
-                        <p class="content-text-size">We Will handles the<br /> purchase process and<br /> get you paid!</p>
-                    </div>
-            </div>
+                &lt;!&ndash;<div class="content-inline arrow"><img src="images/content-arrow-right.png"></div>&ndash;&gt;
+                        <div class="content-inline">
+                            <div class="content-info">
+                                <div class="align-picture">
+                                    <a href="#"><img src="images/say.png"></a>
+                                </div>
+                                <h3><b>Say Bye-Bye</b></h3>
+                                <p class="content-text-size">We Will handles the<br /> purchase process and<br /> get you paid!</p>
+                            </div>
+                            </div>
+                        </div>
 
-            <div class="salers-container buyers-container-border">
+            &lt;!&ndash;<div class="salers-container buyers-container-border">
                 <h2 class="buyers">Buyers</h2>
                 <div class="content-info">
-                    <div class="align-picture">
+                    <div class="align-picture"> 
                         <a href="#"><img src="images/choose.png"></a>
                     </div>
                         <h3><b>Choose your dream car</b></h3>
@@ -101,21 +111,31 @@
                         <h3><b>Congratulation!</b></h3>
                         <p class="content-text-size">It yours!<br /> Try the car for 7 days!<br /> Not happy? retun for full refund</p>
                     </div>
-            </div>
+            </div>&ndash;&gt;
         </div>
 
     </div>
-    <div id="content-first">
-        <div class="container content-first-container">
-            <h1 class="contet-title">Safe and secure, Over 10,000 users</h1>
-            <img class="img-circle col-md-offset-1 col-md-2 circle-image" src="images/first_container.jpg">
-            <div class="col-md-7 content-text-size" ><!--style="float:left; font-size: 22px; text-align: left"-->
+    <div id="comments">
+        <div class="container comments-container">
+            <h1>Safe and secure, Over 10,000 users</h1>
+            <div class="col-md-3 col-sm-3"><img class="img-circle comments-image" src="images/first_container.jpg"></div>
+            <div class="col-md-9 col-sm-9 comments-text">
                 <p>Compared to previous car-buying experiences, this was ridiculously simple. It is too good to be true”</p>
-
-                <p>Carly<br/>
-                   Sydney, Australia</p>
-                <a href="#">Read more reviews</a>
+                <p class="comments-autor"> Carly</p>
+                <p class="comments-autor-location"> Sydney, Australia</p>
+                <a class="comments-link" href="#">Read more reviews</a>
             </div>
+
+            
+            &lt;!&ndash;<div style="float:left; padding-left: 180px; padding-right: 30px; padding-top: 6px;"><img class="img-circle" style="float:left; width: 164px; height: auto;" src="images/first_container.jpg"></div>
+            <div style="font-size: 24px; text-align: left; line-height: 30.74px; padding-right:180px">                
+                <p>Compared to previous car-buying experiences, this was ridiculously simple. It is too good to be true”</p>
+                <p style="margin-bottom: 0;"> Carly</p>
+                <p style="font-size: 16px"> Sydney, Australia</p>
+                <a href="#" style="font-size: 16px; text-decoration: underline; color: #363636;">Read more reviews</a>
+            </div>&ndash;&gt;
+
+
         </div>
     </div>
 
@@ -128,13 +148,13 @@
                 <li><span class="glyphicon glyphicon-ok"> </span> &nbsp safe place for bayers and sellers</li>
                 <li><span class="glyphicon glyphicon-ok" ></span> &nbsp Highest Value</li>
             </ul>
-
+           
             <button type="button" class="btn btn-primary btn-xs intro-button">Sell</button>
             <button type="button" class="btn btn-success btn-xs intro-button">Buy</button>
         </div>
     </div>
     <div id="footer">
-        <div class="container footer-container content-text-size">
+        <div class="container footer-container">
             <div class="col-sm-3 col-xs-3">
                 <ul class="list-unstyled">
                     <li><b>Company</b></li>
@@ -153,10 +173,8 @@
             <div class="col-sm-3 col-xs-3">
                 <ul class="list-unstyled">
                     <li><b>Legal</b></li>
-                    <li><a class="footer-link" href="#">Terms Of</a></li>
-                    <li><a class="footer-link" href="#">Use</a></li>
-                    <li><a class="footer-link" href="#">Privaci</a></li>
-                    <li><a class="footer-link" href="#">Policy</a></li>
+                    <li><a class="footer-link" href="#">Terms Of Use</a></li>
+                    <li><a class="footer-link" href="#">Privaci Policy</a></li>
                 </ul>
             </div>
             <div class="col-sm-3 col-xs-3">
@@ -168,10 +186,10 @@
                 </ul>
             </div>
 
-            <div class="col-xs-12">
-                <p><center>Copyright © 2015 All Rights Reserved.</center></p>
-            </div>
+            <div class="col-xs-12 copyright">
+                <p>Copyright © 2015 All Rights Reserved.</p>
+            </div> 
         </div>
-    </div>
+    </div>-->
 </body>
 </html>
