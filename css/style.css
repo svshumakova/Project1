@@ -248,38 +248,21 @@ h1.lead,
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
 .content-text {
     font-size: 1.7rem;
     margin: 15px;
 }
-
 .content-inline{
-<<<<<<< HEAD
-    background-color: #f00;
-    text-align:center;
-}
-
-.content-inline::after{
-    content: url(/images/content-arrow-right.png);
-    float: left;
-    width: 5%;
-    background-color: blue;
-    vertical-align: middle;
-    display: inline-block;
-=======
     text-align: center;
     position: relative;
     width: 100%;
-
 }
-
 .content-inline::before{
     content: '';
     background: url(/images/content-arrow-right.png);
     background-repeat: no-repeat;
     display: inline-block;
-    position: relative;  
+    position: relative;
     height: 26px;
     width: 14px;
     transform: rotate(90deg);
@@ -287,7 +270,6 @@ h1.lead,
 
 .no-after::before{
     display: none;
->>>>>>> b0d2eb7f0f6397c9a77c95cd90869c8ecaf508aa
 }
 
 .arrow{
@@ -342,7 +324,7 @@ h1.lead,
     font-size: 1.71rem;
 }
 .comments .narrow-container,
-.comments narrow-container{
+.comments .narrow-container{
     color: #fff;
 }
 
@@ -350,17 +332,11 @@ h1.lead,
     font-size: 3.28rem;
     text-align: center
 }
-<<<<<<< HEAD
 
 .comments-text{
     font-size: 24px;
     text-align: left;
     line-height: 30.74px;
-=======
-.media-width{
-    max-width: 760px;
-    margin: 0 auto;
->>>>>>> b0d2eb7f0f6397c9a77c95cd90869c8ecaf508aa
 }
 .comments-autor{
     margin-bottom: 0;
@@ -372,14 +348,8 @@ h1.lead,
 }
 
 .comments-link{
-<<<<<<< HEAD
-    font-size: 16px;
+    font-size: 1.15rem;
     text-decoration: underline;
-=======
-    font-size: 1.15rem; 
-
-    text-decoration: underline; 
->>>>>>> b0d2eb7f0f6397c9a77c95cd90869c8ecaf508aa
     color: #363636;
 }
 .comments-image-area{
@@ -391,11 +361,11 @@ h1.lead,
     }
 
     .comments-text-area{
-        display:inline-block; 
-        vertical-align:middle; 
-        width: 580px; 
-        font-size: 24px; 
-        text-align: left; 
+        display:inline-block;
+        vertical-align:middle;
+        width: 580px;
+        font-size: 24px;
+        text-align: left;
         line-height: 30.74px;
         margin: 5px;
         overflow: auto;
@@ -466,10 +436,10 @@ h1.lead,
         display: none;
     }
 
-    
+
 }
 @media (min-width: 650px) {
-    
+
     .content-inline{
         float: left;
         text-align:center;
@@ -484,7 +454,7 @@ h1.lead,
         display: inline-block;
         position: absolute;
         top: 23px;
-        left: 0;   
+        left: 0;
         height: 26px;
         width: 14px;
         transform: rotate(0deg);
@@ -624,7 +594,7 @@ h1.lead,
     #header .header-button {
         display: inline-block;
     }
-    
+
 
 
     .allbrand-picture {
@@ -652,29 +622,17 @@ h1.lead,
     .align-picture a img{
         height: auto;
     }
-    .content-inline::before{    
+    .content-inline::before{
         top: 68px;
     }
 
-    .p content-text br
+    .p .content-text br
     .p .content-text .br{
         display: inline-block;
     }
-<<<<<<< HEAD
-
     .arrow{
         width: 5%;
         padding-top: 65px;
-=======
-    .content-info h3,
-    .content-info .h3{
-        font-size: 18px;
-        font-weight: 600;
-    }
-    .content-info p,
-    .content-info .p{
-        font-size: 16px;
->>>>>>> b0d2eb7f0f6397c9a77c95cd90869c8ecaf508aa
     }
 }
 
@@ -700,7 +658,6 @@ h1.lead,
     .intro-text h1.lead,
     .intro-text .h1.lead{
         margin: 2.8rem 0;
-<<<<<<< HEAD
     }
     .intro-text p{
         font-size: 1.5rem;
@@ -732,7 +689,7 @@ h1.lead,
         width: 195px;
         text-align: left;
     }
-    
+
 }
 
 @media (min-width: 1200px) {
