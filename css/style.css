@@ -142,17 +142,6 @@ h1.lead,
 .btns-holder .btn:first-child{
     margin-left: 0;
 }
-.intro-text p{
-    font-size: 1.2rem;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-}
-.btns-holder .btn{
-    margin-left:1.5rem;
-}
-.btns-holder .btn:first-child{
-    margin-left: 0;
-}
 /*Intro end*/
 /*Header*/
 #header {
@@ -185,12 +174,31 @@ h1.lead,
     font-size: 14px;
 }
 /*Header end*/
-/*Brands*/
 #brands {
 }
 
-.brands {
-    padding: 0;
+#content {
+    background-color: #f9f9f9;
+    position: relative;
+    text-align: center;
+}
+
+#comments{
+    background-color: #31bfef;
+    position: relative;
+    text-align: center;
+}
+
+#footer{
+    background-color: #363636;
+    color: #fff;
+    font-size: 16px;
+}
+
+.brand-link:hover,
+.brand-link:focus {
+    text-decoration: none;
+    color: #fff;
 }
 .brands-img {
     max-width: 100%;
@@ -271,6 +279,13 @@ h1.lead,
     display: none;
 }
 
+.arrow{
+        padding: 15px;
+    }
+.arrow img{
+        transform: rotate(90deg);
+    }
+
 .salers-container {
     display: inline-block;
     vertical-align: top;
@@ -294,7 +309,6 @@ h1.lead,
     margin: 0;
     width: 100%;
 }
-
 .content-info h3,
 .content-info .h3{
     font-size: 16px;
@@ -310,9 +324,7 @@ h1.lead,
     .content-text .br{
         display: none;
     }
-
 /*Content end*/
-
 /*Comments*/
 .comments{
     background-color: #31bfef;
@@ -342,10 +354,10 @@ h1.lead,
 
 .comments-link{
     font-size: 1.15rem; 
+
     text-decoration: underline; 
     color: #363636;
 }
-
 .comments-image-area{
         padding-right: 26px;
     }
@@ -365,7 +377,6 @@ h1.lead,
         overflow: auto;
     }
 /*Comments end*/
-
 .content-second-container{
     text-align: center; 
     color: #363636;
@@ -415,10 +426,6 @@ h1.lead,
     font-weight: 600;
 }
 /*Foter end*/
-
-
-
-
 @media (min-width: 480px) {
     .allbrand-picture {
         width: calc(33% - 20px);
@@ -478,7 +485,21 @@ h1.lead,
         text-align:center;
     }
 }
-
+@media (min-width: 650px) {
+    .content-inline{  
+        background-color: #f00;
+        float:left;  
+        text-align:center;
+        width: 33.3%;
+    }
+    .arrow{
+        width: 5%; 
+        padding-top: 35px;
+    }
+    .arrow img{
+        transform: rotate(0deg);
+    }
+}
 @media (min-width: 768px) {
     html{
         font-size: 1rem;
@@ -578,6 +599,7 @@ h1.lead,
     }
     
 
+    
     .allbrand-picture {
         width: calc(25% - 20px);
     }
@@ -603,7 +625,6 @@ h1.lead,
     .align-picture a img{
         height: auto;
     }
-
     .content-inline::before{    
         top: 68px;
     }
@@ -621,7 +642,6 @@ h1.lead,
     .content-info .p{
         font-size: 16px;
     }
-
 }
 
 @media (min-width: 992px) {
@@ -646,6 +666,7 @@ h1.lead,
     .intro-text h1.lead,
     .intro-text .h1.lead{
         margin: 2.8rem 0;
+<<<<<<< HEAD
     }
     .intro-text p{
         font-size: 1.5rem;
@@ -744,5 +765,14 @@ h1.lead,
     }
 }
 
+@media (min-width: 1180px) {
+    #intro .header-container{
+        left: 50%;
+        margin-left: -579px;
+    }
+    #intro .header-container,
+    .header-container {
+        width: 1158px;
 
-/*End New Container*/
+    }
+}
