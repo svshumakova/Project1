@@ -89,7 +89,6 @@ h1.lead,
     display: block;
     border-radius: 50%;
     position: relative;
-    cursor: pointer;
     -webkit-transition: opacity 0.5s linear 0s;
     transition: all 0.5s linear 0s;
     background-color: transparent;
@@ -144,24 +143,21 @@ h1.lead,
 }
 /*Intro end*/
 /*Header*/
-
 #header {
-    padding:0 15px;
+    padding:10px 0;
     height: 50px;
 }
 #header .logo{
-    height: 50px;
-    line-height: 50px;
-    color: #fff;
+    height: 30px;
     float: left;
 }
-#header .logo:hover{
-    text-decoration: none;
+#header .logo img{
+    height: 30px;
 }
 #header .right-area {
     float: right;
     text-align: right;
-    padding-top: 15px;
+    padding-top: 7px;
 }
 #header .right-area .btn{
     margin-left: 11px;
@@ -278,7 +274,7 @@ h1.lead,
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;    
+    right: 0;
     margin: auto;
     height: 70px;
 }
@@ -294,7 +290,7 @@ h1.lead,
     margin: 15px;
 }
 
-.content-inline{  
+.content-inline{
     background-color: #f00;
     text-align:center;
 }
@@ -305,7 +301,7 @@ h1.lead,
     width: 5%;
     background-color: blue;
     vertical-align: middle;
-    display: inline-block;   
+    display: inline-block;
 }
 
 .arrow{
@@ -328,7 +324,7 @@ h1.lead,
 }
 
 .buyers {
-    color: #42d685;    
+    color: #42d685;
     margin: 22px 0;
 }
 
@@ -354,7 +350,7 @@ h1.lead,
 
 .comments-text{
     font-size: 24px;
-    text-align: left; 
+    text-align: left;
     line-height: 30.74px;
 }
 .comments-autor{
@@ -366,13 +362,13 @@ h1.lead,
 }
 
 .comments-link{
-    font-size: 16px; 
-    text-decoration: underline; 
+    font-size: 16px;
+    text-decoration: underline;
     color: #363636;
 }
 
 .content-second-container{
-    text-align: center; 
+    text-align: center;
     color: #363636;
     padding: 15px;
 }
@@ -415,14 +411,14 @@ h1.lead,
     }
 }
 @media (min-width: 650px) {
-    .content-inline{  
+    .content-inline{
         background-color: #f00;
-        float:left;  
+        float:left;
         text-align:center;
         width: 33.3%;
     }
     .arrow{
-        width: 5%; 
+        width: 5%;
         padding-top: 35px;
     }
     .arrow img{
@@ -513,15 +509,18 @@ h1.lead,
         left: 21px;
     }
     #header{
-        height: 78px;
+        padding: 14px 15px;
         font-size: 1.125rem;
+        height: 78px;
     }
     #header .logo{
         height: 78px;
-        line-height: 78px;
+    }
+    #header .logo img{
+        height: 50px;
     }
     #header .right-area{
-        padding-top: 20px;
+        padding-top: 10px;
     }
     #header .right-area .btn{
         display: inline-block;
@@ -532,7 +531,7 @@ h1.lead,
         display: inline-block;
     }
 
-    
+
     .allbrand-picture {
         width: calc(25% - 20px);
     }
@@ -564,7 +563,7 @@ h1.lead,
     }
 
     .arrow{
-        width: 5%; 
+        width: 5%;
         padding-top: 65px;
     }
 }
