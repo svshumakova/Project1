@@ -237,11 +237,6 @@ h1.lead,
     color: #363636;
 }
 
-.contet-title {
-    font-size: 24px;
-    margin: 22px 0;
-}
-
 .align-picture{
     position: relative;
     height: 80px;
@@ -383,11 +378,6 @@ h1.comments-title,
         height: auto;
     }
 /*Comments end*/
-.content-second-container{
-    text-align: center;
-    color: #363636;
-    padding: 15px;
-}
 
 /*Foter*/
 #footer{
@@ -418,11 +408,6 @@ h1.comments-title,
 
 .wide-container{
     width: 100%;
-}
-
-.wide-container .h1,
-.wide-container h1{
-    font-size: 2rem;
 }
 
 .narrow-container{
@@ -748,10 +733,55 @@ h1.comments-title,
 wide-container .h1,
 .wide-container h1{
     font-size: 2rem;
+    margin: 0;
+    padding-bottom: 15px;
 }
 
 .narrow-container{
     width: 100%;
+}
+.wide-container-padding{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+/*Advantages*/
+#advantages {
+    background-color: #fff;
+    color: #363636;
+    text-align: center;
+}
+.ul.list-advantages,
+ul.list-advantages{
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+    margin:0;
+}
+
+.advantages-list-item .glyphicon-ok{
+    font-size: 14px;
+    margin-right: 15px;
+}
+.list-advantages li,
+.list-advantages .li{
+    padding: 0 16px;
+}
+/*End advantages*/
+@media (min-width: 768px) {
+    .wide-container-padding{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    wide-container .h1,
+    .wide-container h1{
+        font-size: 2rem;        
+        padding-bottom: 40px;
+    }
+    .ul.list-advantages,
+    ul.list-advantages{
+        padding-bottom: 40px;
+        font-size: 1.2rem;
+    }
+
 }
 
 @media (min-width: 960px) {
@@ -762,16 +792,20 @@ wide-container .h1,
         padding-right: 0;
     }
 
-    .wide-container-padding {
-        padding-top: 30px;
-        padding-bottom: 30px;
+    .wide-container-padding{
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
     .wide-container .h1,
     .wide-container h1 {
-        font-size: 3.43rem;
-        margin-top: 0;
-        margin-bottom: 30px;
+        font-size: 3rem;
+        padding-bottom: 70px;
+    }
+    .ul.list-advantages,
+    ul.list-advantages{
+        font-size: 1.5rem;
+        padding-bottom: 70px;
     }
 }
 @media (min-width: 1180px) {
@@ -797,9 +831,5 @@ wide-container .h1,
         margin: 0 auto;
         padding-left: 0;
         padding-right: 0;
-    }
-    .wide-container-padding{
-        padding-top: 80px;
-        padding-bottom: 80px;
     }
 }
