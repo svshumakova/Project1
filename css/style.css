@@ -1,57 +1,4 @@
-﻿/*New Container*/
-
-.wide-container{
-    width: 100%;
-}
-
-.wide-container .h1,
-.wide-container h1{
-    font-size: 2rem;
-}
-
-.narrow-container{
-    width: 100%;
-}
-
-@media (min-width: 960px) {
-    .narrow-container{
-        width: 940px;
-        margin: 0 auto;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .wide-container-padding{
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-    .wide-container .h1,
-    .wide-container h1{
-        font-size: 3.43rem;
-        margin-top: 0;
-        margin-bottom: 30px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .wide-container{
-        width: 1158px;
-        margin: 0 auto;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .wide-container-padding{
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-}
-
-
-/*End New Container*/
-
-
-
-
-html{
+﻿html{
     font-size: 14px;
 }
 body{
@@ -120,7 +67,6 @@ h1.lead,
     font-weight: 600;
 }
 /*Intro*/
-
 #intro {
     position: relative;
     color: #fff;
@@ -196,10 +142,19 @@ h1.lead,
 .btns-holder .btn:first-child{
     margin-left: 0;
 }
-
+.intro-text p{
+    font-size: 1.2rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+.btns-holder .btn{
+    margin-left:1.5rem;
+}
+.btns-holder .btn:first-child{
+    margin-left: 0;
+}
 /*Intro end*/
 /*Header*/
-
 #header {
     padding:0 15px;
     height: 50px;
@@ -230,11 +185,6 @@ h1.lead,
     font-size: 14px;
 }
 /*Header end*/
-
-
-
-
-
 /*Brands*/
 #brands {
 }
@@ -242,27 +192,21 @@ h1.lead,
 .brands {
     padding: 0;
 }
-
-
 .brands-img {
     max-width: 100%;
 }
-
 .allbrand-picture {
     display: inline-block;
     vertical-align: middle;
     margin: 10px;
     width: calc(50% - 20px);
 }
-
 .allbrand-container {
     text-align: center;
     font-size: 0px;
     line-height: 0px;
 }
 /*Brands end*/
-
-
 /*Content*/
 #content {
     background-color: #f9f9f9;
@@ -309,6 +253,7 @@ h1.lead,
     text-align: center;
     position: relative;
     width: 100%;
+
 }
 
 .content-inline::before{
@@ -325,7 +270,6 @@ h1.lead,
 .no-after::before{
     display: none;
 }
-
 
 .salers-container {
     display: inline-block;
@@ -748,3 +692,57 @@ h1.lead,
 
 
 }
+
+
+
+/*New Container*/
+
+.wide-container{
+    width: 100%;
+}
+
+.wide-container .h1,
+.wide-container h1{
+    font-size: 2rem;
+}
+
+.narrow-container{
+    width: 100%;
+}
+
+@media (min-width: 960px) {
+    .narrow-container {
+        width: 940px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .wide-container-padding {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .wide-container .h1,
+    .wide-container h1 {
+        font-size: 3.43rem;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .wide-container{
+        width: 1158px;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .wide-container-padding{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+
+/*End New Container*/
