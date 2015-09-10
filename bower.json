@@ -1,0 +1,25 @@
+{
+  "name": "Hoodi",
+  "version": "0.0.1",
+  "homepage": "https://github.com/svshumakova/Project1",
+  "authors": [
+    "svetlana.shumakova <svetlana.shumakova@altexsoft.com>"
+  ],
+  "description": "Project about cars",
+  "keywords": [
+    "Cars"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "font-awesome": "fontawesome#~4.4.0",
+    "magnific-popup": "~1.0.0"
+  }
+}
