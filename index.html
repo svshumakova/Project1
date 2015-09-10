@@ -11,6 +11,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
     <div id="intro">
         <img class="intro-img" src="images/intro.jpg">
         <div class="container header-container">
@@ -49,16 +50,15 @@
             <div class="allbrand-picture"><a href="#"><img class="brands-img" src="images/wired.jpg"></a></div>
         </div>
     </div>
-
-    <!--<div id="content">
-        <div class="container content-container">
+    <div id="content">
+        <div class="container-fluid wide-container wide-container-padding">
             <div>
                 <h1>Simple & Easy process</h1>
                 <p class="content-text">Seller gets more, Buyers pay LessSeller gets more, Buyers pay eller gets more, Buyers pay LessSeller gets</p>
             </div>
-            <div >
+            <div>
                 <h2 class="sellers">Sellers</h2>
-                <div class="content-inline">
+                <div class="no-after content-inline">
                     <div class="content-info">
                         <div class="align-picture">
                             <a href="#"><img src="images/tell.png"></a>
@@ -89,7 +89,7 @@
                             </div>
                         </div>
 
-            &lt;!&ndash;<div class="salers-container buyers-container-border">
+           <div class="salers-container buyers-container-border">
                 <h2 class="buyers">Buyers</h2>
                 <div class="content-info">
                     <div class="align-picture">
@@ -102,88 +102,91 @@
                     <div class="align-picture">
                         <a href="#"><img src="images/order.png"></a>
                     </div>
-                    <h3><b>Order & Get it</b></h3>
-                    <p class="content-text-size">Order online or call us and<br /> we will deliver the car to you also we<br /> take car to all the transform process!</p>
                 </div>
-                <div class="content-info">
-                    <div class="align-picture">
-                        <a href="#"><img src="images/congratulation.png"></a>
+                <div class="content-inline">
+                    <div class="content-info">
+                        <div class="align-picture">
+                            <a href="#"><img src="images/order.png"></a>
+                        </div>
+                        <h3>Order & Get it</h3>
+                        <p class="content-text">Order online or call us and<br /> we will deliver the car to you also we<br /> take car to all the transform process!</p>
                     </div>
-                        <h3><b>Congratulation!</b></h3>
-                        <p class="content-text-size">It yours!<br /> Try the car for 7 days!<br /> Not happy? retun for full refund</p>
+                </div>
+                <div class="content-inline">
+                    <div class="content-info">
+                        <div class="align-picture">
+                            <a href="#"><img src="images/congratulation.png"></a>
+                        </div>
+                        <h3>Congratulation!</h3>
+                        <p class="content-text">It yours!<br /> Try the car for 7 days!<br /> Not happy? retun for full refund</p>
                     </div>
-            </div>&ndash;&gt;
-        </div>
-
-    </div>
-    <div id="comments">
-        <div class="container comments-container">
-            <h1>Safe and secure, Over 10,000 users</h1>
-            <div class="col-md-3 col-sm-3"><img class="img-circle comments-image" src="images/first_container.jpg"></div>
-            <div class="col-md-9 col-sm-9 comments-text">
-                <p>Compared to previous car-buying experiences, this was ridiculously simple. It is too good to be true”</p>
-                <p class="comments-autor"> Carly</p>
-                <p class="comments-autor-location"> Sydney, Australia</p>
-                <a class="comments-link" href="#">Read more reviews</a>
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="comments">
+        <div class="container-fluid narrow-container">
 
-
-            &lt;!&ndash;<div style="float:left; padding-left: 180px; padding-right: 30px; padding-top: 6px;"><img class="img-circle" style="float:left; width: 164px; height: auto;" src="images/first_container.jpg"></div>
-            <div style="font-size: 24px; text-align: left; line-height: 30.74px; padding-right:180px">
-                <p>Compared to previous car-buying experiences, this was ridiculously simple. It is too good to be true”</p>
-                <p style="margin-bottom: 0;"> Carly</p>
-                <p style="font-size: 16px"> Sydney, Australia</p>
-                <a href="#" style="font-size: 16px; text-decoration: underline; color: #363636;">Read more reviews</a>
-            </div>&ndash;&gt;
-
-
+            <h1 class="comments-title">Safe and secure, Over 10,000 users</h1>
+            <div class="media media-width">
+                <p class="pull-left comments-image-area">
+                    <img class="media-object img-circle comments-image" src="images/first_container.jpg" alt="...">
+                </p>
+                <div class="media-body">
+                    <p style="font-size: 24px">Compared to previous car-buying experiences, this was ridiculously simple. It is too good to be true”</p>
+                    <p class="comments-autor"> Carly</p>
+                    <p class="comments-autor-location"> Sydney, Australia</p>
+                    <a class="comments-link" href="#">Read more reviews</a>
+                </div>
+            </div>
         </div>
     </div>
 
     <div id="content-second">
-        <div class="container content-second-container" >
-            <h1 class="contet-title">Get the highest value.<br/> No Hidden fees</h1>
+        <div class="container content-second-container">
+            <h1 class="contet-title">Get the highest value.<br /> No Hidden fees</h1>
 
             <ul class="list-inline content-text-size">
                 <li><span class="glyphicon glyphicon-ok"></span> &nbsp Free of charge-no hidden fee</li>
                 <li><span class="glyphicon glyphicon-ok"> </span> &nbsp safe place for bayers and sellers</li>
-                <li><span class="glyphicon glyphicon-ok" ></span> &nbsp Highest Value</li>
+                <li><span class="glyphicon glyphicon-ok"></span> &nbsp Highest Value</li>
             </ul>
-
-            <button type="button" class="btn btn-primary btn-xs intro-button">Sell</button>
-            <button type="button" class="btn btn-success btn-xs intro-button">Buy</button>
+            <div class="btns-holder">
+                <button type="button" class="btn btn-primary btn-lg">Sell</button>
+                <button type="button" class="btn btn-success btn-lg">Buy</button>
+            </div>
         </div>
     </div>
     <div id="footer">
         <div class="container footer-container">
-            <div class="col-sm-3 col-xs-3">
+            <div class="footer-list">
                 <ul class="list-unstyled">
-                    <li><b>Company</b></li>
+                    <li class="footer-list-title">Company</li>
                     <li><a class="footer-link" href="#">About</a></li>
                     <li><a class="footer-link" href="#">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="col-sm-3 col-xs-3">
+            <div class="footer-list">
                 <ul class="list-unstyled">
-                    <li><b>Our Service</b></li>
+                    <li class="footer-list-title">Our Service</li>
                     <li><a class="footer-link" href="#">FAQ</a></li>
                     <li><a class="footer-link" href="#">How It Work</a></li>
                     <li><a class="footer-link" href="#">Why Us</a></li>
                 </ul>
             </div>
-            <div class="col-sm-3 col-xs-3">
+            <div class="footer-list">
                 <ul class="list-unstyled">
-                    <li><b>Legal</b></li>
+                    <li class="footer-list-title">Legal</li>
                     <li><a class="footer-link" href="#">Terms Of Use</a></li>
                     <li><a class="footer-link" href="#">Privaci Policy</a></li>
                 </ul>
             </div>
-            <div class="col-sm-3 col-xs-3">
+            <div class="footer-list">
                 <ul class="list-unstyled">
-                    <li><b>Elsewhere</b></li>
-                    <li><a class="footer-link" href="#">Facebook</a></li>
-                    <li><a class="footer-link" href="#">Twitter</a></li>
-                    <li><a class="footer-link" href="#">Google+</a></li>
+                    <li class="footer-list-title">Elsewhere</li>
+                    <li><a class="footer-link" href="#"><span class="social-img"><img src="images/facebook.png"></span>Facebook</a></li>
+                    <li><a class="footer-link" href="#"><span class="social-img"><img src="images/twitter.png"></span>Twitter</a></li>
+                    <li><a class="footer-link" href="#"><span class="social-img"><img src="images/google.png"></span>Google+</a></li>
                 </ul>
             </div>
 
@@ -191,7 +194,7 @@
                 <p>Copyright © 2015 All Rights Reserved.</p>
             </div>
         </div>
-    </div>-->
+    </div>
 
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
