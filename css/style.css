@@ -171,8 +171,28 @@ h1.lead,
     font-size: 14px;
 }
 /*Header end*/
-#brands {
+/*Logos line*/
+.logos-list{
+    padding:5px 0;
+    margin:0;
+    list-style:none;
+    text-align: center;
+    font-size: 0px;
+    line-height: 0px;
 }
+.logos-list li{
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(32% - 10px);
+    padding:2px 5px;
+}
+.logos-list li img{
+    max-width: 100%;
+}
+.logos-list li img{
+    height: 20px;
+}
+/*Logos line end*/
 
 #content {
     background-color: #f9f9f9;
@@ -186,32 +206,6 @@ h1.lead,
     text-align: center;
 }
 
-#footer{
-    background-color: #363636;
-    color: #fff;
-    font-size: 16px;
-}
-
-.brand-link:hover,
-.brand-link:focus {
-    text-decoration: none;
-    color: #fff;
-}
-.brands-img {
-    max-width: 100%;
-}
-.allbrand-picture {
-    display: inline-block;
-    vertical-align: middle;
-    margin: 10px;
-    width: calc(50% - 20px);
-}
-.allbrand-container {
-    text-align: center;
-    font-size: 0px;
-    line-height: 0px;
-}
-/*Brands end*/
 /*Content*/
 #content {
     background-color: #f9f9f9;
@@ -381,47 +375,44 @@ h1.lead,
 #footer{
     background-color: #363636;
     color: #fff;
-    line-height: 27px;
+    padding: 15px 0;
+    font-size: 0.9rem;
 }
-.footer-container{
-    padding: 15px;
-    text-align:center;
-    font-size: 14px;
+#footer a{
+    color:#fff;
 }
-
-.footer-container .footer-list:first-child{
+.footer-container .footer-col:first-child{
     margin-left: 0;
 }
-
-.footer-list{
+.footer-col {
     display: inline-block;
     vertical-align: top;
-    width: 45%;
-    text-align: left;
-    margin-left: 10px;
+    width:calc(47% - 10px);
+    margin: 0 5px 20px;
+    text-align: center;
 }
-
-.footer-link,
-.footer-link:hover,
-.footer-link:focus{
-    color: #fff;
-    text-decoration: none;
+.lnk-icon{
+    padding: 0 0 0 34px;
 }
-
-.copyright{
-    padding-top: 25px;
-    text-align:center;
-}
-
-.footer-link .social-img{
-    margin-right: 15px;
-}
-.footer-list-title{
-    font-weight: 600;
-}
+.lnk-facebook
 /*Foter end*/
+/*New Container*/
+
+.wide-container{
+    width: 100%;
+}
+
+.wide-container .h1,
+.wide-container h1{
+    font-size: 2rem;
+}
+
+.narrow-container{
+    width: 100%;
+}
+
 @media (min-width: 480px) {
-    .allbrand-picture {
+    .logo-img {
         width: calc(33% - 20px);
     }
 
@@ -439,7 +430,9 @@ h1.lead,
 
 }
 @media (min-width: 650px) {
-
+    .logos-list li{
+        width: calc(18% - 10px)
+    }
     .content-inline{
         float: left;
         text-align:center;
@@ -460,31 +453,11 @@ h1.lead,
         transform: rotate(0deg);
     }
 
-    .content-container{
+    /*.content-container{
         padding: 0;
     }
     .no-after::before{
         display: none;
-    }
-
-    .footer-container{
-        font-size:16px;
-    }
-    .footer-list{
-        width: 23%;
-        text-align: left;
-    }
-    .copyright{
-        padding-top: 65px;
-        text-align:center;
-    }
-}
-@media (min-width: 650px) {
-    .content-inline{
-        background-color: #f00;
-        float:left;
-        text-align:center;
-        width: 33.3%;
     }
     .arrow{
         width: 5%;
@@ -492,6 +465,18 @@ h1.lead,
     }
     .arrow img{
         transform: rotate(0deg);
+    }*/
+
+    .footer-container{
+        font-size:16px;
+    }
+    .footer-col {
+        width: 23%;
+        text-align: left;
+    }
+    .copyright{
+        padding-top: 65px;
+        text-align:center;
     }
 }
 @media (min-width: 768px) {
@@ -536,7 +521,6 @@ h1.lead,
         height: calc(100% - 50px);
         overflow: hidden;
     }
-
     #intro .intro-text::before {
         display: inline-block;
         content: "";
@@ -590,25 +574,22 @@ h1.lead,
         display: inline-block;
         font-size: 1.125rem;
     }
-
     #header .header-button {
         display: inline-block;
     }
-
-
-
-    .allbrand-picture {
-        width: calc(25% - 20px);
+    .logos-list {
+        padding:15px 0;
     }
-
+    .logos-list li{
+        width: auto;
+        padding: 2px 8px;
+    }
     .conte-title {
         font-size: 48px;
     }
-
     .content-text {
         font-size: 24px;
     }
-
     .intro-button {
         width: 230px;
         margin: 30px;
@@ -625,7 +606,6 @@ h1.lead,
     .content-inline::before{
         top: 68px;
     }
-
     .p .content-text br
     .p .content-text .br{
         display: inline-block;
@@ -636,13 +616,12 @@ h1.lead,
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 960px) {
     h1.lead,
     .h1.lead{
-        font-size: 3.3rem;
+        font-size: 4rem;
         font-weight: 600;
         line-height: 1.2;
-
     }
     .btn-lg{
         font-size: 24px;
@@ -651,13 +630,13 @@ h1.lead,
         border-radius: 25px;
         min-width: 230px;
     }
-    .allbrand-picture {
+    .logo-img {
         width: auto;
         max-width: 100px;
     }
     .intro-text h1.lead,
     .intro-text .h1.lead{
-        margin: 2.8rem 0;
+        margin: 2.8rem 0 1.1rem;
     }
     .intro-text p{
         font-size: 1.5rem;
@@ -684,45 +663,13 @@ h1.lead,
         top: -16px;
         left: 26px;
     }
-
-    .footer-list{
+    .logos-list li img{
+        height: 25px;
+    }
+    .footer-col {
         width: 195px;
         text-align: left;
     }
-
-}
-
-@media (min-width: 1200px) {
-    #intro .header-container{
-        left: 50%;
-        margin-left: -579px;
-    }
-    #intro .header-container,
-    .header-container {
-        width: 1158px;
-    }
-
-
-}
-
-
-
-/*New Container*/
-
-.wide-container{
-    width: 100%;
-}
-
-.wide-container .h1,
-.wide-container h1{
-    font-size: 2rem;
-}
-
-.narrow-container{
-    width: 100%;
-}
-
-@media (min-width: 960px) {
     .narrow-container {
         width: 940px;
         margin: 0 auto;
@@ -742,7 +689,23 @@ h1.lead,
         margin-bottom: 30px;
     }
 }
-
+@media (min-width: 1180px) {
+    #intro .header-container{
+        left: 50%;
+        margin-left: -579px;
+    }
+    #intro .header-container,
+    .header-container {
+        width: 1158px;
+        padding: 0;
+    }
+    .logos-list li{
+        padding:0 10px;
+    }
+    .logos-list li img{
+        height: auto;
+    }
+}
 @media (min-width: 1200px) {
     .wide-container{
         width: 1158px;
@@ -756,14 +719,3 @@ h1.lead,
     }
 }
 
-@media (min-width: 1180px) {
-    #intro .header-container{
-        left: 50%;
-        margin-left: -579px;
-    }
-    #intro .header-container,
-    .header-container {
-        width: 1158px;
-
-    }
-}
