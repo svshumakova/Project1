@@ -231,12 +231,16 @@ h1.lead,
     background-color: #f9f9f9;
     position: relative;
     text-align: center;
-}
-
-.content-container {
     color: #363636;
 }
 
+#content .wide-container h1,
+#content .wide-container .h1{
+    padding-bottom: 30px;
+}
+#content .wide-container-padding-top{
+    padding-top:0;
+}
 .align-picture{
     position: relative;
     height: 80px;
@@ -251,15 +255,10 @@ h1.lead,
     margin: auto;
     height: 70px;
 }
-
-.content-text-size{
-    font-size: 14px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
 .content-text {
-    font-size: 1.7rem;
-    margin: 15px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    padding-bottom: 20px;
 }
 .content-inline{
     text-align: center;
@@ -268,25 +267,19 @@ h1.lead,
 }
 .content-inline::before{
     content: '';
-    background: url(/images/content-arrow-right.png);
+    background: url(../images/content-arrow-right.png);
     background-repeat: no-repeat;
     display: inline-block;
     position: relative;
     height: 26px;
     width: 14px;
     transform: rotate(90deg);
+    top: 5px;
 }
 
 .no-after::before{
     display: none;
 }
-
-.arrow{
-        padding: 15px;
-    }
-.arrow img{
-        transform: rotate(90deg);
-    }
 
 .salers-container {
     display: inline-block;
@@ -294,17 +287,20 @@ h1.lead,
     width: 100%;
     text-align: center;
 }
-
 .sellers {
     color: #31bfef;
-    margin: 22px 0;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
-
 .buyers {
     color: #42d685;
-    margin: 22px 0;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
-
 .content-info {
     text-align: center;
     display: inline-block;
@@ -316,16 +312,23 @@ h1.lead,
     font-size: 16px;
     font-weight: 600;
 }
-
+.content-info h3,
+.content-info .h3{
+    font-size: 1.125rem;
+    margin: 0 auto;
+    line-height: 3rem;
+}
 .content-info p,
 .content-info .p{
-    font-size: 14px;
+    font-size: 0.875rem;
+    margin: 0 auto;
+    padding: 0 5px;
 }
 
-    .content-text br
-    .content-text .br{
-        display: none;
-    }
+.content-info .p .br,
+.content-info  p br{
+    display: none;
+}
 /*Content end*/
 /*Comments*/
 .comments{
@@ -424,11 +427,9 @@ h1.comments-title,
     }
 
     .content-text {
-        font-size: 18px;
+        padding-bottom: 30px;
     }
-    .content-text-size br{
-        display: none;
-    }
+   
 
 
 }
@@ -445,7 +446,7 @@ h1.comments-title,
 
     .content-inline::before{
         content: '';
-        background: url(/images/content-arrow-right.png);
+        background: url(../images/content-arrow-right.png);
         background-repeat: no-repeat;
         display: inline-block;
         position: absolute;
@@ -455,20 +456,12 @@ h1.comments-title,
         width: 14px;
         transform: rotate(0deg);
     }
-
-    /*.content-container{
-        padding: 0;
-    }
     .no-after::before{
         display: none;
     }
-    .arrow{
-        width: 5%;
-        padding-top: 35px;
+    .content-container{
+        padding: 0;
     }
-    .arrow img{
-        transform: rotate(0deg);
-    }*/
 
     .footer-container{
         font-size:16px;
@@ -591,7 +584,11 @@ h1.comments-title,
         font-size: 48px;
     }
     .content-text {
-        font-size: 24px;
+        padding-bottom: 35px;
+    }
+    .content-info .p .br,
+    .content-info  p br{
+        display: block;
     }
     .intro-button {
         width: 230px;
@@ -612,10 +609,6 @@ h1.comments-title,
     .p .content-text br
     .p .content-text .br{
         display: inline-block;
-    }
-    .arrow{
-        width: 5%;
-        padding-top: 65px;
     }
     .comments narrow-container,
     .comments .narrow-container{
@@ -674,15 +667,37 @@ h1.comments-title,
     .logos-list li img{
         height: 25px;
     }
+    .content-text {
+        font-size: 1.5rem;
+        padding-bottom: 30px;
+    }
+    .sellers {
+        font-size: 2.25rem;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .buyers {
+        font-size: 2.25rem;
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    .content-info h3,
+    .content-info .h3{
+        font-size: 1.125rem;
+    }
+    .content-info p,
+    .content-info .p{
+        font-size: 1rem;
+    }
     .footer-col {
         width: 195px;
         text-align: left;
     }
-.comments narrow-container,
-.comments .narrow-container{
-    padding-top: 80px;
-    padding-bottom: 80px;
-}
+    .comments narrow-container,
+    .comments .narrow-container{
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
     h1.comments-title,
     .h1.comments-title{
         font-size: 3rem;
