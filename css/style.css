@@ -147,6 +147,11 @@ h1.lead,
     padding:10px 0;
     height: 50px;
 }
+#header::after {
+    clear: both;
+    display:block;
+    content:'';
+}
 #header .logo{
     height: 30px;
     float: left;
@@ -347,6 +352,11 @@ h1.lead,
     max-width: 760px;
     margin: 0 auto;
 }
+.media > .pull-left{
+    padding-top: 4px;
+    padding-right: 26px;
+    margin: 0 auto;
+}
 
 h1.comments-title,
 .h1.comments-title{
@@ -357,22 +367,20 @@ h1.comments-title,
 }
 .comments-autor{
     margin-bottom: 0;
-    font-size: 0.85rem;
+    font-size: 1rem;
 }
 
 .comments-autor-location{
-    font-size: 1rem;
+    font-size: 0.85rem;
+    line-height: 1rem;
 }
 
 .comments-link{
-    font-size: 1rem;
+    font-size: 0.85rem;    
+    line-height: 1rem;
     text-decoration: underline;
     color: #363636;
 }
-.media-body-padding{
-    padding-left: 16px;
-}
-
 .media-heading{
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -559,9 +567,6 @@ h1.comments-title,
         font-size: 1.125rem;
         height: 78px;
     }
-    #header .logo{
-        height: 78px;
-    }
     #header .logo img{
         height: 50px;
     }
@@ -616,6 +621,11 @@ h1.comments-title,
     .comments .narrow-container{
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+    .media > .pull-left{
+        padding-top: 8px;
+        padding-right: 26px;
+        margin: 0 auto;
     }
 }
 
@@ -719,11 +729,16 @@ h1.comments-title,
     }
 
     .comments-autor-location{
-        font-size: 1rem;
+        font-size: 1.125rem;
+        padding-bottom: 10px;
+    }
+    .comments-link{
+        font-size: 1.125rem;    
+        line-height: 1.5rem;
     }
 
     .comments-link{
-        font-size: 1.15rem;
+        font-size: 1.125rem;
     }
 }
 
@@ -778,17 +793,24 @@ ul.list-advantages{
 }
 .list-advantages li,
 .list-advantages .li{
-    padding: 0 16px;
+    padding: 0 1rem;
+    padding-right: 1.5rem;
 }
 /*End advantages*/
 /*Head*/
-#head{
-    background-color:#363636;
-    background: url(../images/header.jpg);
+.page-top{
+    background: url(../images/bg01.jpg) no-repeat 50% 0;
     color: #fff;
     background-size: cover;
-    /*text-align: center;*/
-    margin: 0 auto;
+    text-align: center;
+    height: 360px;
+}
+.top-position{
+    padding-top: 1.5rem;
+}
+.header-wraper{
+    background: #363636;
+    color: #fff;
 }
 /*End head*/
 
@@ -950,7 +972,7 @@ ul.list-advantages{
     color: #cbcbcb;
     border: 1px solid;
 }
-.list-inline>li{
+.page-navigation li{
     padding-left: 0;
     padding-right:0;
     padding-top: 10px;
@@ -969,8 +991,56 @@ ul.list-advantages{
 .design-padding-battom{
     padding-bottom: 400px;
 }
-
 /*End product-list*/
+/*Product page*/
+.container-gray{
+    background: #f8f8f8;
+}
+.main-bg-content{
+    position: relative;
+}
+.main-bg-img{
+    position: absolute;
+    top:0;
+    left: 0;
+    background: url(../images/bg01.jpg) no-repeat 50% 0;
+    width: 100%;
+    height: 360px;
+    background-size: cover;
+
+}
+/*Nav Tabs*/
+.tabs{
+    background-color: #fff;
+    border: 1px solid #ebe8e8;
+    padding-bottom: 200px;
+}
+.nav-tabs{
+    border-bottom: 2px solid #31bfef;
+}
+.products-grid>li{
+    width: 20%;
+    font-size: 1.125rem;
+    font-weight:600;
+    border-bottom: 0;
+    margin-bottom: 0;
+}
+.products-grid>li>a{
+    color: #363636;
+    border: none;
+    border-radius: 0;
+    line-height: 2.5rem;
+    margin-right: 0;
+}
+.products-grid > li > a:active:hover,
+.products-grid > li > a:active,
+.products-grid > li > a:hover,
+.products-grid > li > a:focus {
+    color: #fff;
+    background-color: #31bfef;
+    border-bottom: 0;
+}
+/*End Nav Tabs*/
 /*Media*/
 @media (min-width: 642px) {
     .warranty{      
@@ -1077,4 +1147,9 @@ ul.list-advantages{
         padding-right: 0;
     }
 } 
+
+.carousel-no-display{
+    width: 0;
+    display: none;
+}
 /*End media*/
