@@ -807,6 +807,7 @@ ul.list-advantages{
 }
 .top-position{
     padding-top: 1.5rem;
+    position: relative;
 }
 .header-wraper{
     background: #363636;
@@ -1009,6 +1010,73 @@ ul.list-advantages{
     background-size: cover;
 
 }
+.product-wrapper{    
+    display:table; 
+    width: 100%; 
+    margin-left: 0px; 
+    margin-right: 0px; 
+    padding: 0px; 
+    border: 1px solid #ebe8e8; 
+    background: #fff;
+}
+.product-profile{
+    display: table-row;
+}
+.product-img-container{
+    display: table-cell; 
+    width: 65%;
+    vertical-align: top;
+}
+.product-info-container{    
+    display: table-cell; 
+    width: 35%;
+    vertical-align: top;
+    text-align: left;
+    padding: 25px;
+}
+.product-info-container>div>h3{
+    font-size: 1.875rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 2rem;
+}
+.product-info-container>div>p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    line-height: 2rem;
+}
+
+.product-info-container>div>button{
+    width: 100%;
+}
+.shared-product{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 3.125rem;
+    background:rgba(0,0,0,0.3);      
+    text-align: left;
+    line-height: 3.125rem
+}
+.price{
+        font-family: 'Open Sans', sans-serif;
+        line-height: 3.5rem;
+        font-size: 3rem;
+}
+.img-wrapper{
+    position: relative;
+}
+.shared-product>span{ 
+    content: ""; 
+    margin-left: 1rem;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;    
+}
+
+
 /*Nav Tabs*/
 .tabs{
     background-color: #fff;
@@ -1147,9 +1215,4 @@ ul.list-advantages{
         padding-right: 0;
     }
 } 
-
-.carousel-no-display{
-    width: 0;
-    display: none;
-}
 /*End media*/
