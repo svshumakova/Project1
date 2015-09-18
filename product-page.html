@@ -5,6 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Product Page</title>
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Favicon end-->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -33,14 +52,29 @@
                     <div class="product-img-container">
                         <div class="img-wrapper">
                             <div>
-                                <img class="img-responsive" src="images/product-large.jpg">
+                                <!-- slideshow -->
+                                <div class="cycle-slideshow"
+                                     data-cycle-fx=scrollHorz
+                                     data-cycle-timeout=0
+                                     data-cycle-prev=".prevControl"
+                                     data-cycle-next=".nextControl">
+                                    <img class="img-responsive" src="images/product-large.jpg">
+                                    <img class="img-responsive" src="images/product-large.jpg">
+                                    <img class="img-responsive" src="images/product-large.jpg">
+                                </div>
+                                <div class="shared-product">
+                                    <span>Share this car</span>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-envelope-o"></i></a>
+                                </div>
+                                <div class=center>
+                                    <span class="prevControl slide-prev"></span>
+                                    <span class="nextControl slide-next"></span>
+                                </div>
                             </div>
-                            <div class="shared-product">
-                                <span>Share this car</span>
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-envelope-o"></i></a>
-                            </div>
+
+
                         </div>
                     </div>
                     <div class="product-info-container">
@@ -51,10 +85,10 @@
                                 <span><span class="glyphicon glyphicon-map-marker"></span>  San francisco</span>
                             </div>
                             <div class="product-info-price">
-                                <div class="media" style="padding: 1rem 0;">
-                                    <a class="pull-left" href="#" style="position:relative; padding-right: 25px;">
+                                <div class="media" >
+                                    <a class="pull-left " href="#">
                                         <img class="media-object img-circle" src="images/inspector-img.jpg" alt="...">
-                                        <img style="position: absolute; top: -10px; right: 12px;" src="images/badges.png" alt="...">
+                                        <img class="badges-img" src="images/badges.png" alt="...">
                                     </a>
                                     <div class="media-body">
                                         Certified by<br />
@@ -103,7 +137,10 @@
                     <li><a href="#">Purchase</a></li>
                 </ul>
             </div>
+
         </div>
     </div>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-cycle2/build/jquery.cycle2.min.js"></script>
 </body>
 </html>

@@ -1032,7 +1032,7 @@ a.text-success-darker:active,
 /*Unrefactored styles*/
 
 /*Head*/
-/*.page-top{
+.page-top{
     background: url(../images/bg01.jpg) no-repeat 50% 0;
     color: #fff;
     background-size: cover;
@@ -1046,7 +1046,7 @@ a.text-success-darker:active,
 .header-wraper{
     background: #363636;
     color: #fff;
-}*/
+}
 /*End head*/
 
 
@@ -1301,7 +1301,8 @@ a.text-success-darker:active,
     height: 3.125rem;
     background:rgba(0,0,0,0.3);
     text-align: left;
-    line-height: 3.125rem
+    line-height: 3.125rem;
+    z-index: 600;
 }
 .price{
         font-family: 'Open Sans', sans-serif;
@@ -1319,11 +1320,59 @@ a.text-success-darker:active,
     font-size: 1rem;
     font-weight: 600;
 }
-.shared-product a{
+.shared-product a {
     color: #fff;
     margin-left: 1rem;
 }
-
+.shared-product a:active:hover,
+.shared-product a:active,
+.shared-product a:hover,
+.shared-product a:focus {
+    opacity: 0.7;
+    -webkit-transition: opacity 0.5s linear 0s;
+    transition: opacity 0.5s linear 0s;
+}
+.slide-prev{
+    position: absolute;
+    left: 0;
+    top: 40%;
+    content: '';
+    z-index: 700;
+    height: 43px;
+    width: 24px;
+    background: url(../images/slide-arow.png);
+    background-repeat: no-repeat;
+    cursor:pointer;
+    margin-left: 1rem;
+}
+.slide-next{
+    position: absolute;
+    right: 0;
+    top: 40%;
+    content: '';
+    z-index: 700;
+    height: 43px;
+    width: 24px;
+    background: url(../images/slide-arow.png);
+    background-repeat: no-repeat;
+    cursor:pointer;
+    transform: rotate(180deg);
+    margin-right: 1rem;
+}
+.product-info-price media,
+.product-info-price .media{
+    padding: 1rem 0;
+}
+.badges-img{
+    position: absolute; 
+    top: -10px;
+    right: 12px;
+}
+.product-info-price pull-left,
+.product-info-price .pull-left{
+    position:relative; 
+    padding-right: 25px;
+}
 
 /*Nav Tabs*/
 .tabs{
@@ -1400,28 +1449,198 @@ a.text-success-darker:active,
     display: block;
     line-height: 2.1rem;
     }
+    .product-wrapper{
+        display:table;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        border: 1px solid #ebe8e8;
+        background: #fff;
+    }
+
+    .product-profile{
+        display: table-row;
+    }
+    .product-img-container{
+        display: table-cell;
+        width: 65%;
+        vertical-align: top;
+    }
+    .product-info-container{
+        display: table-cell;
+        width: 35%;
+        vertical-align: top;
+        text-align: left;
+        padding: 15px;
+    }
+    .product-info-title>h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin: 0;
+    }
+    .product-info-title>p{
+        font-size: 1.1rem;
+        font-weight: 500;
+        margin: 0;
+        line-height: 1.5rem;
+    }
+    .product-info-title>span{
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+    .product-info-price{
+        border-top: 1px solid #d6d4d5;
+    }
+    .product-info-price>button{
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    .shared-product{
+        position: absolute;
+        bottom:0;
+        left:0;
+        width: 100%;
+        height: 3.125rem;
+        background:rgba(0,0,0,0.3);
+        text-align: left;
+        line-height: 3.125rem;
+        z-index: 600;
+    }
+    .price{
+        line-height: 2.5rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .slide-prev{
+        position: absolute;
+        left: 0;
+        top: 40%;
+        content: '';
+        z-index: 700;
+        height: 43px;
+        width: 24px;
+        background: url(../images/slide-arow.png);
+        background-repeat: no-repeat;
+        cursor:pointer;
+        margin-left: 1rem;
+    }
+    .slide-next{
+        position: absolute;
+        right: 0;
+        top: 40%;
+        content: '';
+        z-index: 700;
+        height: 43px;
+        width: 24px;
+        background: url(../images/slide-arow.png);
+        background-repeat: no-repeat;
+        cursor:pointer;
+        transform: rotate(180deg);
+        margin-right: 1rem;
+    }
+    .product-info-price media,
+    .product-info-price .media{
+        padding: 1rem 0 0.5rem 0;
+    }
+    .badges-img{
+        position: absolute; 
+        top: -10px;
+        right: 12px;
+    }
+    .product-info-price pull-left,
+    .product-info-price .pull-left{
+        position:relative; 
+        padding-right: 25px;
+    }
 }
 
 @media (min-width: 960px) {
-    /*.narrow-container {
-        width: 940px;
-        margin: 0 auto;
-        padding-left: 0;
-        padding-right: 0;
-    }*/
-
+    
     .wide-container-padding{
         padding-top: 80px;
         padding-bottom: 80px;
     }
-
-    /*.wide-container .h1,
-    .wide-container h1 {
-        font-size: 3rem;
-        padding-bottom: 70px;
-    }*/
     .warranty{
         width: 940px;
+    }
+    .product-wrapper{
+        display:table;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
+        border: 1px solid #ebe8e8;
+        background: #fff;
+    }
+    .product-info-container{
+        padding: 25px;
+    }
+    .product-info-title>h3{
+        font-size: 1.875rem;
+        padding-bottom: 1rem;
+        line-height: 1.875rem;
+    }
+    .product-info-title>p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .product-info-title>span{
+        font-size: 1rem;
+        line-height: 3rem;
+    }
+    .product-info-price{
+        border-top: 1px solid #d6d4d5;
+    }
+    .product-info-price>button{
+        width: 100%;
+        margin-top: 0.9rem;
+    }
+    .price{
+        line-height: 3.5rem;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }    
+    .slide-prev{
+        position: absolute;
+        left: 0;
+        top: 40%;
+        content: '';
+        z-index: 700;
+        height: 43px;
+        width: 24px;
+        background: url(../images/slide-arow.png);
+        background-repeat: no-repeat;
+        cursor:pointer;
+        margin-left: 1rem;
+    }
+    .slide-next{
+        position: absolute;
+        right: 0;
+        top: 40%;
+        content: '';
+        z-index: 700;
+        height: 43px;
+        width: 24px;
+        background: url(../images/slide-arow.png);
+        background-repeat: no-repeat;
+        cursor:pointer;
+        transform: rotate(180deg);
+        margin-right: 1rem;
+    }
+    .product-info-price media,
+    .product-info-price .media{
+        padding: 1rem 0;
+    }
+    .badges-img{
+        position: absolute; 
+        top: -10px;
+        right: 12px;
+    }
+    .product-info-price pull-left,
+    .product-info-price .pull-left{
+        position:relative; 
+        padding-right: 25px;
     }
 }
 @media (min-width: 1180px) {
@@ -1440,12 +1659,6 @@ a.text-success-darker:active,
     .logos-list li img{
         height: auto;
     }
-    /*.wide-container{
-        width: 1158px;
-        margin: 0 auto;
-        padding-left: 0;
-        padding-right: 0;
-    }*/
 }
 
 .carousel-no-display{
