@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Product Page</title>
+    <title>Hoodi - Product</title>
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
@@ -25,16 +25,28 @@
     <meta name="theme-color" content="#ffffff">
     <!--Favicon end-->
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,600,700' rel='stylesheet' type='text/css'>
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <div class="collapse navbar-collapse mobile-nav">
+        <div class="inner">
+            <span class="phone-number"><span class="glyphicon glyphicon-earphone"></span> 1 (888) 505-3149</span>
+            <button type="button" class="btn btn-primary btn-stroke">Sell</button>
+            <button type="button" class="btn btn-success btn-stroke">Buy</button>
+        </div>
+    </div>
     <div class="header-wraper">
         <header id="header" class="wide-container">
             <a class="logo" href="#"><img src="images/logo.png" alt="Hoodi" /></a>
             <div class="right-area">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <span class="phone-number"><span class="glyphicon glyphicon-earphone"></span> 1 (888) 505-3149</span>
                 <button type="button" class="btn btn-primary btn-stroke">Sell</button>
                 <button type="button" class="btn btn-success btn-stroke">Buy</button>
@@ -44,9 +56,6 @@
     <div class="main-bg-content container-gray">
         <div class="main-bg-img"></div>
         <div class="container-fluid narrow-container wrap design-padding-battom top-position ">
-
-
-
             <div class="product-wrapper">
                 <div class="product-profile">
                     <div class="product-img-container">
@@ -58,9 +67,9 @@
                                      data-cycle-timeout=0
                                      data-cycle-prev=".prevControl"
                                      data-cycle-next=".nextControl">
-                                    <img class="img-responsive" src="images/product-large.jpg">
-                                    <img class="img-responsive" src="images/product-large.jpg">
-                                    <img class="img-responsive" src="images/product-large.jpg">
+                                    <img class="img-responsive" src="images/product-large.jpg" alt="Product photo">
+                                    <img class="img-responsive" src="images/product-large.jpg" alt="Product photo">
+                                    <img class="img-responsive" src="images/product-large.jpg" alt="Product photo">
                                 </div>
                                 <div class="shared-product">
                                     <span>Share this car</span>
@@ -73,8 +82,6 @@
                                     <span class="nextControl slide-next"></span>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                     <div class="product-info-container">
@@ -87,7 +94,7 @@
                             <div class="product-info-price">
                                 <div class="media" >
                                     <a class="pull-left " href="#">
-                                        <img class="media-object img-circle" src="images/inspector-img.jpg" alt="...">
+                                        <img class="media-object img-circle" src="images/inspector-img.jpg" alt="User Photo">
                                         <img class="badges-img" src="images/badges.png" alt="...">
                                     </a>
                                     <div class="media-body">
@@ -144,6 +151,7 @@
         </div>
     </div>
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="bower_components/jquery-cycle2/build/jquery.cycle2.min.js"></script>
 </body>
 </html>

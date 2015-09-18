@@ -1832,13 +1832,13 @@ a.text-success-darker:active,
     padding: 1rem 0;
 }
 .badges-img{
-    position: absolute; 
+    position: absolute;
     top: -10px;
     right: 12px;
 }
 .product-info-price pull-left,
 .product-info-price .pull-left{
-    position:relative; 
+    position:relative;
     padding-right: 25px;
 }
 
@@ -2012,34 +2012,24 @@ a.text-success-darker:active,
         padding: 1rem 0 0.5rem 0;
     }
     .badges-img{
-        position: absolute; 
+        position: absolute;
         top: -10px;
         right: 12px;
     }
     .product-info-price pull-left,
     .product-info-price .pull-left{
-        position:relative; 
+        position:relative;
         padding-right: 25px;
     }
 }
 
 @media (min-width: 960px) {
-    
+
     .wide-container-padding{
         padding-top: 80px;
         padding-bottom: 80px;
     }
-<<<<<<< HEAD
-    .warranty{
-=======
-
-    /*.wide-container .h1,
-    .wide-container h1 {
-        font-size: 3rem;
-        padding-bottom: 70px;
-    }*/
     .advanteges {
->>>>>>> 11de353c01d72f0fff8b894cd482bd88b2823ece
         width: 940px;
     }
     .product-wrapper{
@@ -2078,7 +2068,7 @@ a.text-success-darker:active,
         line-height: 3.5rem;
         font-size: 3rem;
         margin-bottom: 1.5rem;
-    }    
+    }
     .slide-prev{
         position: absolute;
         left: 0;
@@ -2111,13 +2101,13 @@ a.text-success-darker:active,
         padding: 1rem 0;
     }
     .badges-img{
-        position: absolute; 
+        position: absolute;
         top: -10px;
         right: 12px;
     }
     .product-info-price pull-left,
     .product-info-price .pull-left{
-        position:relative; 
+        position:relative;
         padding-right: 25px;
     }
 }
